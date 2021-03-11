@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <style>
+    #btn {
+      padding: 10px 14px;
+      color: white;
+      background-color: royalblue;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+  <body>
+    <h1>Heading</h1>
+    <p id="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolorem quasi
+      recusandae delectus natus non quo odit suscipit aut! Officia provident
+      repudiandae minima recusandae modi veniam, labore aliquid iure id natus
+      soluta quia! Beatae nostrum voluptates debitis quos error impedit earum
+      nam dolor quidem asperiores, doloremque inventore reprehenderit itaque
+      nihil?
+    </p>
+    <button id="btn" onclick="hide()">Submit</button>
+    <script>
+      function hide() {
+        let para = document.getElementById('para');
+        // para.addEventListener('mouseover', function run(){
+        //   alert('Mouse Inside')
+        // });
+        // para.addEventListener('mouseout', function run(){
+        //   alert('Mouse Outside')
+        // });
+        para.addEventListener('mouseover', function run(){
+          console.log('Mouse Inside');
+        });
+        para.addEventListener('mouseout', function run(){
+          console.log('Mouse Outside');
+        });
+
+        let btn = document.getElementById("btn");
+        if (para.style.display != "none") {
+          para.style.display = "none";
+        } else {
+          para.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

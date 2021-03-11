@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval and setTimeout</title>
+</head>
+<style>
+
+</style>
+<body>
+    <div class="container">
+        <!-- This is a container -->
+        Time is <span id="time"></span>
+    </div>
+    <script>
+        console.log('This is console');
+        // setTimeout --> run only once after interval
+        function greet(name) {
+            console.log("Hello! Good Morning " + name)
+        }
+        // setTimeout(greet, 3000, 'Anni');//time in milisec
+
+        // timeOut = setTimeout(greet, 3000, 'Anni');//time in milisec
+        // console.log(timeOut)
+        //will give an unique id used to clear timeout
+        //clearTimeout(id)
+
+
+        //setInterval --> run continously after interval of time
+        // setInterval(greet, 2000);
+
+        function displaytime() {
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displaytime, 1000);
+    </script>
+</body>
+</html>
