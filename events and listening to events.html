@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Events</title>
   </head>
+  <script src ="events.js"></script>
   <style>
     #btn {
       padding: 10px 14px;
@@ -26,29 +27,5 @@
       nihil?
     </p>
     <button id="btn" onclick="hide()">Submit</button>
-    <script>
-      function hide() {
-        let para = document.getElementById('para');
-        // para.addEventListener('mouseover', function run(){
-        //   alert('Mouse Inside')
-        // });
-        // para.addEventListener('mouseout', function run(){
-        //   alert('Mouse Outside')
-        // });
-        para.addEventListener('mouseover', function run(){
-          console.log('Mouse Inside');
-        });
-        para.addEventListener('mouseout', function run(){
-          console.log('Mouse Outside');
-        });
-
-        let btn = document.getElementById("btn");
-        if (para.style.display != "none") {
-          para.style.display = "none";
-        } else {
-          para.style.display = "block";
-        }
-      }
-    </script>
   </body>
 </html>
