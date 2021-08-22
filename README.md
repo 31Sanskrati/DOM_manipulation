@@ -1,7 +1,7 @@
 # JavaScript
 
 ## General Info
-This is my coding practice for JavaScript language :thinking:. Folders name shows the concept of JS used.
+This is my coding practice for JavaScript language :thinking:. The file name shows the concept of JS used.
 
 ## Technologies
 I have used
@@ -10,7 +10,7 @@ I have used
 - CSS
 
 ## Setup
-You just have to copy the code and save it with the extensions. After this just opne the html file in your favorite browser.
+You just have to copy the code and save it with the extensions. After this just open the html file in your favorite browser.
 
 ## Repositiory Status
 Not finished yet.
